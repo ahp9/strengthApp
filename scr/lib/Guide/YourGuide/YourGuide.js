@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Dimensions } from 'react-native';
 import YourGuide_Card from '../YourGuide_Card/YourGuide_Card.js';
-import ProgressCard from '../../Things/ProgressCard/ProgressCard.js';
+import ProgressCard from '../../Things/Progress/ProgressCard.js';
 import { SwiperFlatList } from 'react-native-swiper-flatlist';
 
 

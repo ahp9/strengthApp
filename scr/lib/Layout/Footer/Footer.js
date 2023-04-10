@@ -4,7 +4,7 @@ import { Icon } from '../../Form/Icon/Icon.js';
 export default function Footer({navigation}) {
     return (
       <View style={styles.footer}>
-        <Icon navigation={navigation} navigationLink="ExercisePage" img={require('strengthapp/assets/gym.png')}/>
+        <Icon navigation={navigation} navigationLink="WorkoutPage" img={require('strengthapp/assets/gym.png')}/>
         <Icon navigation={navigation} navigationLink="HomePage" img={require('strengthapp/assets/home.png')}/>
         <Icon navigation={navigation} navigationLink="GuidePage" img={require('strengthapp/assets/guides.png')}/>
       </View>

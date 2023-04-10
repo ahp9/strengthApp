@@ -1,5 +1,5 @@
 import { Dimensions, View, StyleSheet, Image, Text, TouchableOpacity } from 'react-native';
-import DificultyLevel from '../../Things/DifficulityLevel/DifficulityLevel.js';
+import DificultyLevel from '../../Things/Difficulity/DifficulityLevel.js';
 
 const screenDimensions = Dimensions.get('screen');
 
