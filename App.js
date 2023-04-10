@@ -7,6 +7,8 @@ import WorkoutPage from './scr/Pages/WorkoutPage.js';
 import ListPage from './scr/Pages/ListPage.js';
 import GuideHome from './scr/Pages/GuideHome.js';
 import WorkoutHome from './scr/Pages/WorkoutHome.js';
+import ExerciseScreen from './scr/Pages/ExerciseScreen.js';
+import CompleteWorkout from './scr/Pages/CompletedWorkout.js';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -25,6 +27,8 @@ export default function App() {
         <Stack.Screen name='ListPage' component={ListPage}/>
         <Stack.Screen name="GuideHome" component={GuideHome}/>
         <Stack.Screen name="WorkoutHome" component={WorkoutHome}/>
+        <Stack.Screen name='ExerciseScreen' component={ExerciseScreen}/>
+        <Stack.Screen name='CompleteWorkout' component={CompleteWorkout}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
