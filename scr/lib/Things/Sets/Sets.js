@@ -56,7 +56,8 @@ export function Sets({exercise}){
           );
         }
         return setTrackers;
-      };
+    };
+    
     return(
         <View style={styles.container}>
             {exercise.warmUp ? renderWorkoutTracker() : renderSetTracker()}
