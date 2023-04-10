@@ -16,7 +16,7 @@ export default function FavoriteType({navigation}){
     };
 
     const handleCardPress = (name) => {
-      navigation.navigate('ExerciseHome', {name});
+      navigation.navigate('WorkoutHome', {name});
     };
 
     const renderFavorite = ({ item }) => {

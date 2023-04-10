@@ -3,15 +3,11 @@ import { TouchableOpacity, StyleSheet, Text, SafeAreaView, Image, View, Dimensio
 export function WorkoutFlip({workouts, navigation, guide}){
 
     const handlePost = (name) => {
-        navigation.navigate('ExerciseHome', {name , guide });
+        navigation.navigate('WorkoutHome', {name , guide });
     }
 
-    const windowWidth = Dimensions.get('window').width; // get the window width
-
-    // calculate the maximum number of characters that can fit in the available space
-    const maxChars = Math.floor((windowWidth * 0.8 - 84) / 10); // 84 is the total width of other elements and 10 is an approximate average character width
-
-    // calculate the maximum width of the text element based on the font size and the maximum number of characters
+    const windowWidth = Dimensions.get('window').width; 
+    const maxChars = Math.floor((windowWidth * 0.8 - 84) / 10); 
     const maxTextWidth = Math.floor(18 * maxChars);
 
     const renderWorkouts = () => {

@@ -9,7 +9,7 @@ export default function ListCard({data, WG, navigation}){
         if(WG==='Guides'){
             navigation.navigate('GuideHome', {name});
         } else {
-            navigation.navigate('ExerciseHome', {name});
+            navigation.navigate('WorkoutHome', {name});
         }
     }
   
