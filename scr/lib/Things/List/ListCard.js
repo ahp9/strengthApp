@@ -7,7 +7,7 @@ const halfScreenWidth = (screenWidth / 2)*0.85;
 export default function ListCard({data, WG, navigation}){
     const handleCardPress = (name) => {
         if(WG==='Guides'){
-            navigation.navigate('WorkoutHome', {name});
+            navigation.navigate('GuideHome', {name});
         } else {
             navigation.navigate('ExerciseHome', {name});
         }

@@ -8,7 +8,7 @@ export default function YourGuide_Card(props) {
     const {name, id, dificulty_level, navigation} = props;
 
   const handleCardPress = (name) => {
-    navigation.navigate('WorkoutHome', {name});
+    navigation.navigate('GuideHome', {name});
 }
   return (
     <TouchableOpacity onPress={() => handleCardPress(name)}>
