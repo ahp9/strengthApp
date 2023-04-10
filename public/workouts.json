@@ -1,0 +1,291 @@
+[
+    {
+        "id": 1,
+        "name": "Lower body - Glute & Quad focus",
+        "number": 5,
+        "time": 60,
+        "type": "Lower body",
+        "completed": true,
+        "favorite": true,
+        "img": "legday.png",
+        "exersise": [
+            {
+                "id": 1,
+                "warmUp": true,
+                "name": "Warm Up",
+                "time": "5=10 min"
+            },
+            {
+                "id": 2,
+                "warmUp": false,
+                "name": "Barbell Hip Thrust",
+                "sets": 4,
+                "reps": 8
+            },
+            {
+                "id": 3,
+                "warmUp": false,
+                "name": "Barbell Sumo Deadlift",
+                "sets": 4,
+                "reps": 10
+            },
+            {
+                "id": 4,
+                "warmUp": false,
+                "name": "Dumbbell Bulgarian Split Squat",
+                "sets": 3,
+                "reps": 12
+            },
+            {
+                "id": 5,
+                "warmUp": false,
+                "name": "Leg Extension Machine",
+                "sets": 3,
+                "reps": 10
+            },
+            {
+                "id": 6,
+                "warmUp": false,
+                "name": "Abductor Machine",
+                "sets": 4,
+                "reps": 12
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Upper body - Should, Chest & Tricpes",
+        "number": 6,
+        "time": 60,
+        "type": "Upper body",
+        "completed": false,
+        "img": "....",
+        "favorite": true,
+        "exersise": [
+            {
+                "id": 7,
+                "warmUp": true,
+                "name": "Warm Up",
+                "time": "5=10 min"
+            },
+            {
+                "id": 8,
+                "warmUp": false,
+                "name": "Barbell Bench Press",
+                "sets": 4,
+                "reps": 10
+            },
+            {
+                "id": 9,
+                "warmUp": false,
+                "name": "Double Incline Chest Press",
+                "sets": 4,
+                "reps": 8
+            },
+            {
+                "id": 10,
+                "warmUp": false,
+                "name": "Barbell Shoulder Presses",
+                "sets": 4,
+                "reps": 8
+            },
+            {
+                "id": 11,
+                "warmUp": false,
+                "name": "Weighted Plate Front Raises",
+                "sets": 4,
+                "reps": 12
+            },
+            {
+                "id": 12,
+                "warmUp": false,
+                "name": "Dumbell Neutral Grip Chest Press",
+                "sets": 3,
+                "reps": 12
+            },
+            {
+                "id": 13,
+                "warmUp": false,
+                "name": "Dips",
+                "sets": 3,
+                "reps": "As many as you can"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Lower body - Glutes focus",
+        "number": 5,
+        "time": 60,
+        "type": "Lower body",
+        "completed": false,
+        "img": "....",
+        "favorite": false,
+        "exersise": [
+            {
+                "id": 14,
+                "warmUp": true,
+                "name": "Warm Up",
+                "time": "5=10 min"
+            },
+            {
+                "id": 15,
+                "warmUp": false,
+                "name": "Barbell Romanian Deadlift",
+                "sets": 4,
+                "reps": 10
+            },
+            {
+                "id": 16,
+                "warmUp": false,
+                "name": "Barbell reverse lunge",
+                "sets": 4,
+                "reps": 8
+            },
+            {
+                "id": 17,
+                "warmUp": false,
+                "name": "One Leg Legpress",
+                "sets": 4,
+                "reps": 8
+            },
+            {
+                "id": 18,
+                "warmUp": false,
+                "name": "Cable kickbacks",
+                "sets": 3,
+                "reps": 10
+            },
+            {
+                "id": 19,
+                "warmUp": false,
+                "name": "Hyper extensions",
+                "sets": 3,
+                "reps": 15
+            }
+        ]
+
+    },
+    {
+        "id": 4,
+        "name": "Upper body - Back & Biceps",
+        "number": 6,
+        "time": 60,
+        "type": "Upper body",
+        "completed": false,
+        "img": "....",
+        "favorite": false,
+        "exersise": [
+            {
+                "id": 20,
+                "warmUp": true,
+                "name": "Warm Up",
+                "time": "5=10 min"
+            },
+            {
+                "id": 21,
+                "warmUp": false,
+                "name": "Lat Pulldown",
+                "sets": 4,
+                "reps": 8
+            },
+            {
+                "id": 22,
+                "warmUp": false,
+                "name": "Cable Narrow Grip Pulldowns",
+                "sets": 3,
+                "reps": 10
+            },
+            {
+                "id": 23,
+                "warmUp": false,
+                "name": "Double Row",
+                "sets": 4,
+                "reps": 8
+            },
+            {
+                "id": 24,
+                "warmUp": false,
+                "name": "Cable rope Face-pull",
+                "sets": 3,
+                "reps": 12
+            },
+            {
+                "id": 25,
+                "warmUp": false,
+                "name": "Dumbell Biceps Curls",
+                "sets": 4,
+                "reps": 8
+            },
+            {
+                "id": 26,
+                "warmUp": false,
+                "name": "Dumbell Biceps Spider Curls",
+                "sets": 4,
+                "reps": 8
+            }
+        ]
+
+    },
+    {
+        "id": 5,
+        "name": "Shoulders & Abs",
+        "number": 6,
+        "time": 60,
+        "type": "Upper body",
+        "completed": false,
+        "favorite": true,
+        "img": "....",
+        "exersise": [
+            {
+                "id": 27,
+                "warmUp": true,
+                "name": "Warm Up",
+                "time": "5=10 min"
+            },
+            {
+                "id": 28,
+                "warmUp": false,
+                "name": "Seated Dumbbell Shoulder Press",
+                "sets": 4,
+                "reps": 10
+            },
+            {
+                "id": 29,
+                "warmUp": false,
+                "name": "Standing Dumbbell Lateral Raises",
+                "sets": 4,
+                "reps": 12
+            },
+            {
+                "id": 30,
+                "warmUp": false,
+                "name": "Dumbbell Standing Back flyes",
+                "sets": 3,
+                "reps": 12
+            },
+            {
+                "id": 31,
+                "warmUp": false,
+                "name": "Dead-Bug",
+                "sets": 3,
+                "reps": "30 sek"
+            },
+            {
+                "id": 32,
+                "warmUp": false,
+                "name": "Bicycle Crunches",
+                "sets": 3,
+                "reps": "30 sek"
+            },
+            {
+                "id": 33,
+                "warmUp": false,
+                "name": "Plank",
+                "sets": "3",
+                "reps": "45 sek"
+            }
+        ]
+
+    }
+]

@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
 
-export default function Index() {
+export default function Index({ navigation }) {
   
   return (
     <View style={styles.container}>
@@ -10,8 +10,10 @@ export default function Index() {
       <Image 
         style={styles.img}
         resizeMode="cover" 
-        source={require('strengthapp/assets/gym.png')}/>
-    <Text style={styles.buttonText}>Login</Text>
+        source={require('strengthapp/assets/logo.png')}/>
+    <TouchableOpacity style={styles.buttons} onPress={() => navigation.navigate('Login')}> 
+      <Text style={styles.buttonText}>Login</Text>
+    </TouchableOpacity>
     </View>
   );
 }
@@ -30,9 +32,9 @@ const styles = StyleSheet.create({
   },
 
   img: {
-    margin: 100,
-    width: 40,
-    height: 40,
+    margin: '5%',
+    width: 300,
+    height: 300,
   },
 
   buttons: {

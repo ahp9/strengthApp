@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1, 
+        "name": "Stronger You",
+        "description": "The 'Stronger you' giode focuses on building strength and muscle mass with a specific focus on building the glutes and shoulders. It is an 4 week guide with 5 workouts a week.",
+        "weeks": 4,
+        "days": 5,
+        "completed": false,
+        "img": "legday.png",
+        "difficult_level": "Intermedian",
+        "type": "Strength",
+        "workouts": [
+        {
+            "id": 1
+        },
+        {
+            "id": 2
+        },
+        {
+            "id": 3
+        },
+        {
+            "id": 4
+        },
+        {
+            "id": 5
+        }
+      ]
+    },
+    {
+        "id": 2, 
+        "name": "Death of your Legs",
+        "description": "The 'Stronger you' giode focuses on building strength and muscle mass with a specific focus on building the glutes and shoulders. It is an 4 week guide with 5 workouts a week.",
+        "weeks": 4,
+        "days": 5,
+        "completed": false,
+        "img": "workout_upperbody.png",
+        "difficult_level": "Intermedian",
+        "type": "Get Lean",
+        "workouts": [
+        {
+            "id": 1
+        },
+        {
+            "id": 2
+        },
+        {
+            "id": 3
+        },
+        {
+            "id": 4
+        },
+        {
+            "id": 5
+        }
+      ]
+    },
+    {
+        "id": 2, 
+        "name": "Transformation",
+        "description": "The 'Stronger you' giode focuses on building strength and muscle mass with a specific focus on building the glutes and shoulders. It is an 4 week guide with 5 workouts a week.",
+        "weeks": 4,
+        "days": 5,
+        "completed": false,
+        "img": "workout.png",
+        "difficult_level": "Beginner",
+        "type": "Weight Loss",
+        "workouts": [
+        {
+            "id": 1
+        },
+        {
+            "id": 2
+        },
+        {
+            "id": 3
+        },
+        {
+            "id": 4
+        },
+        {
+            "id": 5
+        }
+      ]
+    }
+   
+  ]
