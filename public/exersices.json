@@ -16,7 +16,7 @@
     {
         "id": 3,
         "name": "Dumbbell Bulgarian Split Squat",
-        "description": "....",
+        "description": "Place one foot on the bench and stand on the other. Keep your spine straight and neutral.",
         "img": "dumbbell-bulgarian-split-squat.png",
         "completed": false
     },
@@ -67,6 +67,160 @@
         "name": "Warm Up",
         "description": "Run, Jog, do what ever and warm up your body",
         "img": "walking.png",
+        "completed": false
+    },
+    {
+        "id": 11,
+        "name": "Power Walk",
+        "description": "You can either perform this exercise inside or outside. But the purpose is to walk at a strong speed without starting to run.",
+        "img": "walking.png",
+        "completed": false
+    },
+    {
+        "id": 12,
+        "name": "Isolated Mountain Climbers",
+        "description": "Put emphasis on the crunch at the top of the exercise",
+        "img": "mountainClimbers.png",
+        "completed": false
+    },
+    {
+        "id": 13,
+        "name": "Bicycle Crunches",
+        "description": "Don't throw up your legs in this exercise, work with controlled movements to fell the contact in the abs",
+        "img": "Bicycle-Crunch.png",
+        "completed": false
+    },
+    {
+        "id": 14,
+        "name": "Dumbell Neutral Grip Chest Press",
+        "description": "Lie on a flat bench and hold a dumbbell in each hand. Maintain a neutral grip, that is the dumbbell faces the same direction as you are, and begin with your arems straight. Bend your arms and lower them to the sider of your body, pause and then lift your arms to repeat.",
+        "img": "neaturalGripChest.png",
+        "completed": false
+    },
+    {
+        "id": 15,
+        "name": "Dips",
+        "description": "",
+        "img": "dips.png",
+        "completed": false
+    },
+    {
+        "id": 16,
+        "name": "Barbell Romanian Deadlift",
+        "description": "Have slightly bent knees during this exercise, do not lock them out. Your spine should be in a straight and neutral position, do no bend you back. Lower doen the weights to just below your knees, then return back up.",
+        "img": "romanian-deadlift.png",
+        "completed": false
+    },
+    {
+        "id": 17,
+        "name": "Dumbbell Reverse Lunge",
+        "description": "Take a step backwards, keeping your upper body aligned and your back straight. Lower yourself enough for your front leg to be at a 90-degree angle",
+        "img": "dumbbell-lunge.png",
+        "completed": false
+    },
+    {
+        "id": 18,
+        "name": "One Leg Legpress",
+        "description": "Place your foot closer to middle then when doing a legpress with both feet. ",
+        "img": "Single-Leg-Press.png",
+        "completed": false
+    },
+    {
+        "id": 19,
+        "name": "Cable Kickbacks",
+        "description": "If your don't have access to a cable machine, you can do regular standing kick-backs, with only body weight.",
+        "img": "cable-kickback.png",
+        "completed": false
+    },
+    {
+        "id": 20,
+        "name": "Hyper Extensions",
+        "description": "Do not overstretch or bend your back at the top of the exercise. Stop of the top position where your lower back is straight. ",
+        "img": "weighted-hyperextension.png",
+        "completed": false
+    },
+    {
+        "id": 21,
+        "name": "Lat Pulldown",
+        "description": "Remember that it is you back, not your arms, that should be doing the heavy work in this exercise. If you find yourself pilling too much with your arms, lower the weight and try to find the contact in your back. To help you find the right contact, out your chin up and push your chest up.",
+        "img": "lat-pulldown.png",
+        "completed": false
+    },
+    {
+        "id": 22,
+        "name": "Cable Narrow Grip Pulldowns",
+        "description": "Keep your chest up and your back straight during this exercise.",
+        "img": "narrow_grip_pulldown.png",
+        "completed": false
+    },
+    {
+        "id": 23,
+        "name": "Single Arm Dumbbell Row",
+        "description": "Bend forward at the hip and have the weight in one hand. The weight is hanging toward the floor. The weight is then pulled upward, closer to the chest, before loweing it back to the starting position.",
+        "img": "One+Arm+Dumbbell+Row.png",
+        "completed": false
+    },
+    {
+        "id": 24,
+        "name": "Cable Rope Face-Pull",
+        "description": "Pull the rope against your face, push your shoulders down, chest up and contract the scapulas. ",
+        "img": "face-pull.png",
+        "completed": false
+    },
+    {
+        "id": 25,
+        "name": "Dumbbell Biceps Curls",
+        "description": "Hold a dumbbel with your palm facing upward. Slowly curl the weight up by bending you elbow, keeping your elbow close to your body.",
+        "img": "biceps-curls.png",
+        "completed": false
+    },
+    {
+        "id": 26,
+        "name": "Dumbbell Biceps Spider Curls",
+        "description": "Lay facing down on a little bit inclined bench. Have your chest supported by the head of the bench and let the weights hang down. Then perform bicep curls.",
+        "img": "Dumbbell-Reverse-Spider-Curl.png",
+        "completed": false
+    },
+    {
+        "id": 27,
+        "name": "Seated Dumbbell Shoulder Press",
+        "description": "Have relaxed and tucked down shoulders in the start position. Push your chest slightly forward and contract you scapulas in the back.",
+        "img": "seated-dumbbell-shoulder-press.png",
+        "completed": false
+    },
+    {
+        "id": 28,
+        "name": "Standing Dumbbell Lateral Raises",
+        "description": "You shoulders should be pressed down in the start position. Push your chest up and forward and your lats back, isolate the shoulders by only moving your arms and shoulders during the exercise. Raise the dumbbells up to shoulder height. Do not swing the weights up and down.",
+        "img": "Lateral-raises.png",
+        "completed": false
+    },
+    {
+        "id": 29,
+        "name": "Dumbbell Standing Back Flyes",
+        "description": "Use really light weights and many reps in this exercise in order to isolate your rear delts and upper back",
+        "img": "Back-Flyes.png",
+        "completed": false
+    },
+    {
+        "id": 30,
+        "name": "Dead-Bug",
+        "description": "Lay on your back, raising and lowering opposite arms and legs while keeping your abdominal muschles engaged.",
+        "img": "",
+        "completed": false
+    },
+    {
+        "id": 31,
+        "name": "Row machine",
+        "description": "If you don't have access to a row mahcine in your gym you can do a regular dumbbell or barbell rows.",
+        "img": "row_machine.png",
+        "completed": false
+    },
+    {
+        "id": 32,
+        "name": "Barbell Squat",
+        "description": "Make sure you don't lean over with your back during the exercise. Keep your back steady and squat with your lower body only. Push your heels and perform a slow controlled movement when lowering the weights. Don't thrust at the top and don't lock your knees out.",
+        "img": "squat.png",
         "completed": false
     }
 ]

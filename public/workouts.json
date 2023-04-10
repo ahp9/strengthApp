@@ -138,7 +138,7 @@
             {
                 "id": 16,
                 "warmUp": false,
-                "name": "Barbell reverse lunge",
+                "name": "Dumbbell Reverse Lunge",
                 "sets": 4,
                 "reps": 8
             },
@@ -152,14 +152,14 @@
             {
                 "id": 18,
                 "warmUp": false,
-                "name": "Cable kickbacks",
+                "name": "Cable Kickbacks",
                 "sets": 3,
                 "reps": 10
             },
             {
                 "id": 19,
                 "warmUp": false,
-                "name": "Hyper extensions",
+                "name": "Hyper Extensions",
                 "sets": 3,
                 "reps": 15
             }
@@ -199,28 +199,28 @@
             {
                 "id": 23,
                 "warmUp": false,
-                "name": "Double Row",
+                "name": "Single Arm Dumbbell Row",
                 "sets": 4,
                 "reps": 8
             },
             {
                 "id": 24,
                 "warmUp": false,
-                "name": "Cable rope Face-pull",
+                "name": "Cable Rope Face-Pull",
                 "sets": 3,
                 "reps": 12
             },
             {
                 "id": 25,
                 "warmUp": false,
-                "name": "Dumbell Biceps Curls",
+                "name": "Dumbbell Biceps Curls",
                 "sets": 4,
                 "reps": 8
             },
             {
                 "id": 26,
                 "warmUp": false,
-                "name": "Dumbell Biceps Spider Curls",
+                "name": "Dumbbell Biceps Spider Curls",
                 "sets": 4,
                 "reps": 8
             }
@@ -260,7 +260,7 @@
             {
                 "id": 30,
                 "warmUp": false,
-                "name": "Dumbbell Standing Back flyes",
+                "name": "Dumbbell Standing Back Flyes",
                 "sets": 3,
                 "reps": 12
             },
@@ -281,9 +281,143 @@
             {
                 "id": 33,
                 "warmUp": false,
-                "name": "Plank",
+                "name": "Isolated Mountain Climbers",
                 "sets": "3",
                 "reps": "45 sek"
+            }
+        ]
+
+    },
+    {
+        "id": 6,
+        "name": "Push Day",
+        "number": 5,
+        "time": 40,
+        "type": "Upper body",
+        "completed": false,
+        "favorite": false,
+        "img": "....",
+        "exersise": [
+            {
+                "id": 34,
+                "warmUp": true,
+                "name": "Warm Up",
+                "time": "5=10 min"
+            },
+            {
+                "id": 35,
+                "warmUp": false,
+                "name": "Seated Dumbbell Shoulder Press",
+                "sets": 3,
+                "reps": 8
+            },
+            {
+                "id": 36,
+                "warmUp": false,
+                "name": "Double Incline Chest Press",
+                "sets": 4,
+                "reps": 12
+            },
+            {
+                "id": 37,
+                "warmUp": false,
+                "name": "Dumbbell Standing Back Flyes",
+                "sets": 3,
+                "reps": 12
+            },
+            {
+                "id": 38,
+                "warmUp": false,
+                "name": "Dead-Bug",
+                "sets": 3,
+                "reps": "30 sek"
+            }
+        ]
+
+    },
+    {
+        "id": 7,
+        "name": "Pull Day",
+        "number": 4,
+        "time": 40,
+        "type": "Upper body",
+        "completed": false,
+        "favorite": false,
+        "img": "....",
+        "exersise": [
+            {
+                "id": 39,
+                "warmUp": true,
+                "name": "Warm Up",
+                "time": "5=10 min"
+            },
+            {
+                "id": 40,
+                "warmUp": false,
+                "name": "Single Arm Dumbbell Row",
+                "sets": 3,
+                "reps": 8
+            },
+            {
+                "id": 41,
+                "warmUp": false,
+                "name": "Lat Pulldown",
+                "sets": 4,
+                "reps": 12
+            },
+            {
+                "id": 42,
+                "warmUp": false,
+                "name": "Dumbbell Biceps Spider Curls",
+                "sets": 3,
+                "reps": 12
+            }
+        ]
+
+    },
+    {
+        "id": 8,
+        "name": "Leg Day",
+        "number": 4,
+        "time": 40,
+        "type": "Lower body",
+        "completed": false,
+        "favorite": false,
+        "img": "....",
+        "exersise": [
+            {
+                "id": 43,
+                "warmUp": true,
+                "name": "Warm Up",
+                "time": "5=10 min"
+            },
+            {
+                "id": 44,
+                "warmUp": false,
+                "name": "Barbell Squat",
+                "sets": 4,
+                "reps": 8
+            },
+            {
+                "id": 45,
+                "warmUp": false,
+                "name": "Dumbbell Reverse Lunge",
+                "sets": 4,
+                "reps": 12
+            },
+            {
+                "id": 46,
+                "warmUp": false,
+                "name": "Barbell Hip Thrust",
+                "sets": 3,
+                "reps": 12
+            },
+            {
+                "id": 47,
+                "warmUp": false,
+                "name": "Hyper Extensions",
+                "sets": 3,
+                "reps": 15
             }
         ]
 

@@ -35,7 +35,7 @@ export default function WorkoutHome({ navigation, route }) {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" />
-      <ExerciseHeader navigation={navigation} backLink="WorkoutHome" name={guide}/>
+      <ExerciseHeader navigation={navigation} backLink="GuideHome" name={guide}/>
       <ScrollView style={styles.scrollView}>
         <Text style={styles.header}>{name}</Text>
         <Button text='Start workout' navigation={navigation} navigationLink="ExerciseScreen" exercises={exercises} workout={name} guide={guide}/>

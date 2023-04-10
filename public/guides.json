@@ -7,7 +7,7 @@
         "days": 5,
         "completed": false,
         "img": "legday.png",
-        "difficult_level": "Intermedian",
+        "difficult_level": "Advanced",
         "type": "Strength",
         "workouts": [
         {
@@ -29,57 +29,51 @@
     },
     {
         "id": 2, 
-        "name": "Death of your Legs",
-        "description": "The 'Stronger you' giode focuses on building strength and muscle mass with a specific focus on building the glutes and shoulders. It is an 4 week guide with 5 workouts a week.",
+        "name": "Get Started",
+        "description": "If you have littile to none experience in the gym, then this guide is for you. It is also suitable if you had a long break from the gym and want to get back on track. The main goal with this guide is to build overall strength and get started with your training! They guide is split up into 3 workouts a week: One lower body day, one pull day (back and biceps) and one push day (chest, shoulder and triceps).",
         "weeks": 4,
-        "days": 5,
+        "days": 3,
         "completed": false,
         "img": "workout_upperbody.png",
-        "difficult_level": "Intermedian",
+        "difficult_level": "Beginner",
         "type": "Get Lean",
         "workouts": [
         {
-            "id": 1
+            "id": 6
         },
         {
-            "id": 2
+            "id": 7
         },
         {
-            "id": 3
-        },
-        {
-            "id": 4
-        },
-        {
-            "id": 5
+            "id": 8
         }
       ]
     },
     {
         "id": 2, 
         "name": "Transformation",
-        "description": "The 'Stronger you' giode focuses on building strength and muscle mass with a specific focus on building the glutes and shoulders. It is an 4 week guide with 5 workouts a week.",
+        "description": "The focus on this 5 day split transofrmation guide can be to both get lean or to build if that's your goal. You can chose to complete the workouts with or without the cardio. There is also a glute focus on the lower body workouts in this guide and the upper body days is focused on a lot on heacy presses to keep developing upper body strength. ",
         "weeks": 4,
         "days": 5,
         "completed": false,
         "img": "workout.png",
-        "difficult_level": "Beginner",
+        "difficult_level": "Intermedian",
         "type": "Weight Loss",
         "workouts": [
         {
-            "id": 1
-        },
-        {
-            "id": 2
-        },
-        {
-            "id": 3
+            "id": 8
         },
         {
             "id": 4
         },
         {
-            "id": 5
+            "id": 3
+        },
+        {
+            "id": 2
+        },
+        {
+            "id": 1
         }
       ]
     }

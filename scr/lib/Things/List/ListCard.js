@@ -32,7 +32,7 @@ export default function ListCard({data, WG, navigation}){
                 </TouchableOpacity>
               )}
               numColumns={2}
-              keyExtractor={(index) => index}
+              keyExtractor={(i, index) => index}
             />
           ): <Text style={styles.warning}>No {WG}</Text>}
       </View>
