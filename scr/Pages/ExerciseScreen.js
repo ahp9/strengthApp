@@ -7,6 +7,7 @@ import {ExerciseOverview}  from '../lib/Exercise/Overview/ExerciseOverview.js';
 import { Sets}  from '../lib/Things/Sets/Sets.js';
 import { CompletedExercise } from '../lib/Form/Button/Completed/CompletedExercise.js';
 import { NavigatorButton } from '../lib/Form/Button/Navigator/NavigatorButton.js';
+import { HeroSection } from '../lib/Things/Hero/HeroSection.js';
 
 const ExerciseScreen = ({ route }) => {
   const { exercises, currentExerciseIndex, navigation, workout ,guide} = route.params;
@@ -50,12 +51,7 @@ const ExerciseScreen = ({ route }) => {
                 style={{ width: 320, height: 320, alignSelf: 'center' }}
                 resizeMode="cover" 
                 source={require('../../assets/exercises/barbell-bench-press.png')} />
-            <View style={styles.header}>
-                <Text style={styles.name}>{currentExercise.name}</Text>
-                <View style={styles.status}>
-                    <Text style={styles.statusText} >Exercise {currentIndex+1}/{exercises.length}</Text>
-                </View>
-            </View>
+            <HeroSection name={currentExercise.name} currentIndex={currentIndex} length={exercises.length}/>
         </View>
         <View>
           <NavigatorButton navigateBackToExercise={navigateBackToExercise} navigateToNextExercise={navigateToNextExercise} current={currentIndex} workout={workout} length={exercises.length} guide={guide}/>
@@ -92,14 +88,14 @@ const styles = StyleSheet.create({
         display:'flex',
         flexDirection:'row',
         marginVertical: '5%',
-        justifyContent: 'space-between',
+        justifyContent: 'center'
     },
 
     name:{
         fontSize: 24,
         fontWeight: 'bold',
         flex:1, 
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
     },
   
     status:{

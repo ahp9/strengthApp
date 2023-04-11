@@ -31,8 +31,8 @@ const style = StyleSheet.create({
     },
 
     title: {
-        alignSelf: 'flex-start',
-        fontSize: 20,
+        alignSelf: 'center',
+        fontSize: 24,
         margin: '5%'
     },
 })

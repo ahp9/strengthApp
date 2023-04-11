@@ -11,7 +11,6 @@ export default function WorkoutHome({ navigation, route }) {
   const [exercises, setExercises] = useState([]);
 
   const { name, guide } = route.params;
-  console.log('guide', guide);
 
   useEffect(() => {
     fetchData();
@@ -41,7 +40,6 @@ export default function WorkoutHome({ navigation, route }) {
         <Button text='Start workout' navigation={navigation} navigationLink="ExerciseScreen" exercises={exercises} workout={name} guide={guide}/>
         <WorkoutOverview workout={workout}/>
         <Text style={styles.header}>Exercises</Text>
-        {console.log('name', name)}
         <View style={styles.content}>
             {exercises ? (
                 <ExerciseFlip exercises={exercises} navigation={navigation} workout={name} guide={guide}/>

@@ -2,21 +2,21 @@ import React,{useState, useEffect} from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { SwiperFlatList } from 'react-native-swiper-flatlist';
 
-export default function FavoriteType({navigation}){
+export default function FavoriteType({navigation, string, navigationLink}){
     const [data, setData] = useState([]);
 
     useEffect(() => {
       fetchData();
     }, []);
-  
+    
     const fetchData = async () => {
-      const jsonData = require('../../../../../public/workouts.json');
+      const jsonData = string;
       const guide = jsonData.filter(item => item.favorite === true);
       setData(guide);
     };
 
     const handleCardPress = (name) => {
-      navigation.navigate('WorkoutHome', {name});
+      navigation.navigate(navigationLink, {name});
     };
 
     const renderFavorite = ({ item }) => {
@@ -43,6 +43,7 @@ export default function FavoriteType({navigation}){
             showPagination={true}
             paginationDefaultColor="#FFFFFF"
             paginationActiveColor="#9F9FFF"
+            paginationStyleItem={style.dots}
         />
     </View>
     )
@@ -57,11 +58,21 @@ const style = StyleSheet.create({
   title: {
     fontSize: 24,
     marginVertical: '5%',
-    alignSelf: 'flex-start',
+    alignSelf: 'center',
   },
 
   container: {
     width: '100%'
+  },
+
+  dots:{
+    width:10, 
+    height:10, 
+    borderRadius:5,  
+    borderWidth: 1,
+    borderColor: '#000',
+    margin: '30%' ,
+
   },
 
   cards:{

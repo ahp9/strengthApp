@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import { StyleSheet, ScrollView,View,  SafeAreaView, Text,StatusBar, TouchableOpacity } from 'react-native';
+import { StyleSheet, ScrollView,View,  SafeAreaView, Text,StatusBar, TouchableOpacity, Image } from 'react-native';
 import Header from '../lib/Layout/Header/Header.js';
 import Footer from '../lib/Layout/Footer/Footer.js';
 import ChangeAlert from '../lib/Alert/User/ChangeAlert.js';
+import LogOutButton from '../lib/Form/Button/Logout/LogOutButton.js';
 
 export default function User({navigation}){
     const [user, setUser] = useState([]);
@@ -19,16 +20,25 @@ export default function User({navigation}){
 
     
     const handleAlertClose = (change, name, username, password) => {
-       console.log(name);
-       console.log(username);
-       console.log(password);
+        if (!change.includes(true)){
+            console.log('Nothing was changed')
+        } else {
+            if(change[0]){
+                console.log('Name was changed to ', name);
+            }
+            if (change[1]){
+                console.log('Username was change to ', username);
+            }
+            if (change[2]){
+                console.log('Password was change to ', password)
+            }
+        } 
         setShowAlert(false);
     };
 
-    console.log('user', user);
     return (
         <SafeAreaView style={styles.container}>
-            <Header style={styles.header} loggedIn={false} navigation={navigation}/>
+            <Header style={styles.header} loggedIn={false} navigation={navigation} navigationLink={'HomePage'}/>
             <ScrollView style={styles.content}>
                 <Text style={styles.h2}>User</Text>
                 <View style={styles.information}>
@@ -53,6 +63,8 @@ export default function User({navigation}){
                     </TouchableOpacity>
                 </View>
                 <ChangeAlert isVisible={showAlert} onClose={handleAlertClose}/>
+                <Image style={{margin: '10%', width: '100%', alignSelf: 'center'}} source={require('strengthapp/assets/Line.png')}/>
+                <LogOutButton navigation={navigation}/>
             </ScrollView>
             <Footer style={styles.footer} navigation={navigation} user={user[0]} />
         </SafeAreaView>

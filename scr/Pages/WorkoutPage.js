@@ -21,7 +21,7 @@ export default function WorkoutPage({navigation}){
       <StatusBar barStyle="light-content" />
       <Header loggedIn = {true} navigation={navigation} navigationLink={"HomePage"}/>
       <ScrollView style={styles.scrollView}>
-        <FavoriteType  navigation={navigation} data={data}/>
+        <FavoriteType  navigation={navigation} navigationLink={'WorkoutHome'} string={require('../../public/workouts.json')}/>
         <WorkoutTypes style={styles.types} navigation={navigation} />
       </ScrollView>
       <Footer navigation={navigation} />

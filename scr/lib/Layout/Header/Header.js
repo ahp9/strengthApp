@@ -8,7 +8,7 @@ export default function Header(props) {
         <Icon navigation={navigation} navigationLink={navigationLink} img={require('strengthapp/assets/gym.png')} />
         {loggedIn ? 
           <>
-            <Icon navigation={props.navigation} navigationLink="User" img={require('strengthapp/assets/user.png')} />
+            <Icon navigation={navigation} navigationLink="User" img={require('strengthapp/assets/user.png')} />
           </>
            :<View><Text></Text></View> }
       </SafeAreaView>

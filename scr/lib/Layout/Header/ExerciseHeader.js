@@ -7,7 +7,7 @@ export default function ExerciseHeader(props) {
   const [backgroundColor, setBackgroundColor] = useState('#CDD4FF');
 
   const handlePress = () => {
-    setBackgroundColor(backgroundColor === '#CDD4FF' ? 'rgba(255,255,255,0.5)' : '#CDD4FF');
+    setBackgroundColor(backgroundColor === '#CDD4FF' ? 'rgba(255, 175, 236, 1)' : '#CDD4FF');
   };
     return (
       <SafeAreaView style={styles.header}>

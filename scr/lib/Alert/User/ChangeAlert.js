@@ -14,12 +14,10 @@ const ChangeAlert = ({ isVisible, onClose}) => {
     const fetchData = async () => {
         const jsonData = require('../../../../public/user.json');
         setUser(jsonData);
-        console.log(user);
     };
 
     const setData = () =>{       
         if(user.length > 0){
-          console.log('set Info');
           setName(user[0].name);
           setUsername(user[0].username);
           setPassword(user[0].password);
@@ -31,18 +29,16 @@ const ChangeAlert = ({ isVisible, onClose}) => {
     useEffect(() => {
         setData();
     }, [user]);
-    
-
-    const tempUser = user;
-    console.log('tjekk user', user);
 
     const handleUpdatePress = () => {
-        const change = [false, false];
-        if(tempUser.name !== name){
+        const change = [false, false, false];
+        if(user[0].name !== name){
             change[0] = true;
-        } else if (tempUser.username !== username){
+        } else if (user[0].username !== username){
             change[1] = true;
-        }
+        } else if (user[0].password !== password){
+          change[2] = true;
+      }
 
         onClose(change, name, username, password);
     };
@@ -55,7 +51,7 @@ const ChangeAlert = ({ isVisible, onClose}) => {
             <Text style={styles.message}>Change the information below by erasing out and write in new information in</Text>
              <View style={styles.inputs}>
               <View style={styles.input}>
-                <Text>Name: </Text>
+                <Text style={styles.text}>Name: </Text>
                 <TextInput 
                     style={styles.textinput}
                     value={name}
@@ -64,7 +60,7 @@ const ChangeAlert = ({ isVisible, onClose}) => {
                 />
               </View>
               <View style={styles.input}>
-                <Text>Username: </Text>
+                <Text style={styles.text}>Username: </Text>
                 <TextInput 
                     style={styles.textinput}
                     value={username}
@@ -73,7 +69,7 @@ const ChangeAlert = ({ isVisible, onClose}) => {
                 />
               </View>
               <View style={styles.input}>
-                <Text>Password: </Text>
+                <Text style={styles.text}>Password: </Text>
                 <TextInput 
                     style={styles.textinput}
                     value={password}
@@ -132,7 +128,16 @@ const styles = StyleSheet.create({
 
   input:{
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
+    margin: '2.5%',
+    justifyContent: 'space-between'
+  },
+
+  text:{
+    alignSelf: 'center',
+    justifyContent: 'center',
+    marginRight: '2.5%',
+    fontWeight: '500'
   },
 
   textinput:{
@@ -141,7 +146,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderColor : "#000",
     borderWidth: 1,
-    width: '48%'
+    width: '70%'
   }
 });
 

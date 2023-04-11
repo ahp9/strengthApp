@@ -1,20 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { TouchableOpacity, View, Text, StyleSheet } from 'react-native';
 
-export default function Button({text, navigation, navigationLink, exercises, workout, guide}) {
-  const [backgroundColor, setBackgroundColor] = useState('#fff');
-  useEffect(() => {
-    setBackgroundColor('#E9EBFF')
-  });
+export default function LogOutButton({navigation}) {
   const onPressed = () =>{
 
-    navigation.navigate(navigationLink, { exercises: exercises, currentExerciseIndex: 0 , navigation, workout, guide});
+    navigation.navigate("Index");
   }
 
   return (
     <TouchableOpacity style={styles.touchableOpacity} onPress={() => onPressed()}>
         <View>
-            <Text style={styles.text}>{text}</Text>
+            <Text style={styles.text}>Logout</Text>
         </View>
     </TouchableOpacity>
 

@@ -8,14 +8,14 @@ export function NavigatorButton({navigateBackToExercise, navigateToNextExercise,
                 <Image 
                     style={styles.back}
                     resizeMode="cover"  
-                    source={require('strengthapp/assets/Vector.png')} />
+                    source={require('strengthapp/assets/Arrow.png')} />
             </View>
         </TouchableOpacity>
         <Image style={styles.line} source={require('strengthapp/assets/Line.png')}/>
         <TouchableOpacity onPress={() => navigateToNextExercise(workout)} >
             <View>
-                {current+1 < length ? <Image style={styles.front} source={require('strengthapp/assets/Vector.png')} /> : 
-                <Image style={styles.front} source={require('strengthapp/assets/completed.png')} />}
+                {current+1 < length ? <Image style={styles.front} source={require('strengthapp/assets/Arrow.png')} /> : 
+                <Image style={styles.front} source={require('strengthapp/assets/checked.png')} />}
             </View>
         </TouchableOpacity>
     </View>
@@ -48,8 +48,8 @@ const styles = StyleSheet.create({
     },
 
     front: {
-        width: 27, 
-        height: 20, 
+        width: 30, 
+        height: 30, 
     },
 
     line: {

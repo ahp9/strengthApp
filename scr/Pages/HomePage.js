@@ -4,37 +4,15 @@ import { StyleSheet, StatusBar, Text, ScrollView, SafeAreaView } from 'react-nat
 import Header from '../lib/Layout/Header/Header.js';
 import YourGuide from '../lib/Guide/YourGuide/YourGuide.js';
 import Footer from '../lib/Layout/Footer/Footer.js';
-/**
- * import * as SQLite from 'expo-sqlite';
-import { FileSystem } from 'expo';
-import { openDatabase } from 'react-native-sqlite-storage';
-import { Asset } from 'expo-asset';
- */
 
 export default function HomePage({ navigation }) {
   const [data, setData] = useState([]);
-  /*
-  const db = SQLite.openDatabase('strength/database/database.db');
-  db.transaction(tx => {
-      tx.executeSql(
-        'SELECT * FROM users',
-        [],
-        (_, { rows }) => {
-          // Handle the query results
-          console.log(rows);
-        },
-        (_, error) => {
-          // Handle the query error
-          console.error(error);
-          console.log("faild");
-        }
-      );
-    });
-  */
+
   const fetchData = useCallback(async () => {
       
     const jsonData = require('../../public/guides.json');
-    setData(jsonData);
+    const guide = jsonData.filter(item => item.ongoing === true);
+    setData(guide);
   });
 
   useEffect(() => {

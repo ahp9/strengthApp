@@ -10,7 +10,6 @@ export function ExerciseOverview({exercise}){
     const fetchData = async () => {
         const jsonData = require('../../../../public/exersices.json');
         const filteredData = jsonData.filter(e => e.name===exercise.name);
-        console.log(filteredData);
         setData(filteredData[0].description);
     };
 
