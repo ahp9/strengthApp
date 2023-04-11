@@ -23,7 +23,7 @@ export default function CompleteWorkout({navigation, route}){
 
     return (
         <SafeAreaView style={styles.container}>
-            <Header style={styles.header} loggedIn={true} navigation={navigation}/>
+            <Header style={styles.header} loggedIn={true} navigation={navigation} navigationLink={"HomePage"}/>
             <ScrollView style={styles.content}>
                 <Image 
                 style={{ width: 320, height: 320, alignSelf: 'center' , margin: '10%'}}

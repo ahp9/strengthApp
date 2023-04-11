@@ -50,7 +50,7 @@ const ExerciseScreen = ({ route }) => {
             <Image 
                 style={{ width: 320, height: 320, alignSelf: 'center' }}
                 resizeMode="cover" 
-                source={require('../../assets/exercises/barbell-bench-press.png')} />
+                source={require(`strengthapp/assets/exercises/sumo-deadlift.png`)} />
             <HeroSection name={currentExercise.name} currentIndex={currentIndex} length={exercises.length}/>
         </View>
         <View>

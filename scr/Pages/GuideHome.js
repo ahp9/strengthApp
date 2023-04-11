@@ -39,7 +39,7 @@ export default function GuideHome({navigation, route}){
 
     return (
         <SafeAreaView style={styles.container}>
-            <Header style={styles.header} loggedIn={true} navigation={navigation}/>
+            <Header style={styles.header} loggedIn={true} navigation={navigation} navigationLink={"HomePage"}/>
             <ScrollView style={styles.content}>
                 <GuideHeader guide={data}/>
                 <View style={styles.workouts}>

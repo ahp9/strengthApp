@@ -54,13 +54,13 @@
       ]
     },
     {
-        "id": 2, 
+        "id": 3, 
         "name": "Transformation",
         "description": "The focus on this 5 day split transofrmation guide can be to both get lean or to build if that's your goal. You can chose to complete the workouts with or without the cardio. There is also a glute focus on the lower body workouts in this guide and the upper body days is focused on a lot on heacy presses to keep developing upper body strength. ",
         "weeks": 4,
         "days": 5,
         "completed": false,
-        "favorite": false,
+        "favorite": true,
         "ongoing": false,
         "img": "workout.png",
         "difficult_level": "Intermedian",
