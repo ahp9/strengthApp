@@ -25,6 +25,7 @@ export default function User({navigation}){
         setShowAlert(false);
     };
 
+    console.log('user', user);
     return (
         <SafeAreaView style={styles.container}>
             <Header style={styles.header} loggedIn={false} navigation={navigation}/>
@@ -33,15 +34,15 @@ export default function User({navigation}){
                 <View style={styles.information}>
                     <View style={styles.info}>
                         <Text style={styles.h3}>Name:</Text>
-                        <Text style={{fontSize: 20}}>{user[0].name}</Text>
+                        <Text style={{fontSize: 20}}>{user.length >0 ? user[0].name: ''}</Text>
                     </View>
                     <View style={styles.info}>
                         <Text style={styles.h3}>Username:</Text>
-                        <Text style={{fontSize: 20}}>{user[0].username}</Text>
+                        <Text style={{fontSize: 20}}>{user.length >0 ? user[0].username: ''}</Text>
                     </View>
                     <View style={styles.info}>
                         <Text style={styles.h3}>Password:</Text>
-                        <Text style={{fontSize: 20}}>{user[0].password.replace(/./g, '*')}</Text>
+                        <Text style={{fontSize: 20}}>{user.length >0 ? user[0].password.replace(/./g, '*'): ''}</Text>
                     </View>
                 </View>
                 <View>
@@ -58,6 +59,10 @@ export default function User({navigation}){
 
     )
 }
+
+/*
+{user[0].password.replace(/./g, '*')}
+*/
 
 const styles = StyleSheet.create({
     container: {

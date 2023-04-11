@@ -17,18 +17,24 @@ const ChangeAlert = ({ isVisible, onClose}) => {
         console.log(user);
     };
 
-    const setData = () =>{
-        console.log(user);
-        setName(user[0].name);
-        setUsername(user[0].username);
-        setPassword(user[0].password);
+    const setData = () =>{       
+        if(user.length > 0){
+          console.log('set Info');
+          setName(user[0].name);
+          setUsername(user[0].username);
+          setPassword(user[0].password);
+        }
+       
     }
+    
 
     useEffect(() => {
         setData();
     }, [user]);
+    
 
     const tempUser = user;
+    console.log('tjekk user', user);
 
     const handleUpdatePress = () => {
         const change = [false, false];
@@ -39,9 +45,6 @@ const ChangeAlert = ({ isVisible, onClose}) => {
         }
 
         onClose(change, name, username, password);
-        setName('');
-        setUsername('');
-        setPassword('');
     };
 
   return (
@@ -51,19 +54,33 @@ const ChangeAlert = ({ isVisible, onClose}) => {
             <Text style={styles.title}>Change information</Text>
             <Text style={styles.message}>Change the information below by erasing out and write in new information in</Text>
              <View style={styles.inputs}>
-                {console.log(name)}
+              <View style={styles.input}>
+                <Text>Name: </Text>
                 <TextInput 
-                    style={styles.input}
+                    style={styles.textinput}
                     value={name}
                     onChangeText={setName}
                     onSubmitEditing={onClose}
                 />
+              </View>
+              <View style={styles.input}>
+                <Text>Username: </Text>
                 <TextInput 
-                    style={styles.input}
+                    style={styles.textinput}
                     value={username}
                     onChangeText={setUsername}
                     onSubmitEditing={onClose}
                 />
+              </View>
+              <View style={styles.input}>
+                <Text>Password: </Text>
+                <TextInput 
+                    style={styles.textinput}
+                    value={password}
+                    onChangeText={setPassword}
+                    onSubmitEditing={onClose}
+                />
+              </View>
             </View>
         </View>
         <TouchableOpacity style={styles.button} onPress={handleUpdatePress}>
@@ -108,12 +125,17 @@ const styles = StyleSheet.create({
 
   inputs:{
     display: 'flex',
-    flexDirection:'row',
+    flexDirection:'column',
     justifyContent:'space-between',
     width: '90%'
   },
 
   input:{
+    display: 'flex',
+    flexDirection: 'row'
+  },
+
+  textinput:{
     alignSelf: 'center',
     borderRadius: 10,
     padding: 10,
