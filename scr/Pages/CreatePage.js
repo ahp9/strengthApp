@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, ScrollView, SafeAreaView,StatusBar } from 'react-native';
 import Header from '../lib/Layout/Header/Header';
 import CreateButton from '../lib/Form/Button/Create/CreateButton';
+import { WriteIn } from '../lib/Things/Create/WriteIn';
 
-export function CreatePage({navigation, navigationLink, WG}){
+export function CreatePage({navigation,route}){
+    const{ navigationLink, WG} = route.params;
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -15,8 +17,8 @@ export function CreatePage({navigation, navigationLink, WG}){
       setData(jsonData);
     };
 
-    const getInfo = () => {
-        console.log('test');
+    const getInfo = (name) => {
+        console.log(name);
     }
 
     return (
@@ -25,6 +27,7 @@ export function CreatePage({navigation, navigationLink, WG}){
       <Header style={styles.header} loggedIn={true} navigation={navigation} navigationLink={"HomePage"}/>
       <ScrollView style={styles.scrollView}>
         <CreateButton navigation={navigation} navigationLink={navigationLink}/>
+        <WriteIn getInfo={getInfo} WG={WG}/>
       </ScrollView>
     </SafeAreaView>
     )

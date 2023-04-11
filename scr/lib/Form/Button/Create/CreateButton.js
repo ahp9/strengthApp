@@ -4,6 +4,7 @@ import { TouchableOpacity, View, Text, StyleSheet } from 'react-native';
 export default function CreateButton({navigation, navigationLink}) {
   
     const onPressed = () =>{
+        console.log('test', navigation);
     navigation.navigate(navigationLink);
   }
 

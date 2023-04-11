@@ -1,22 +1,69 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, ScrollView, SafeAreaView,StatusBar, TextInput } from 'react-native';
+import { StyleSheet, View, Text, TextInput } from 'react-native';
 import ExerciseHeader from '../../Layout/Header/ExerciseHeader';
 
-export function WriteIn({getInfo}){
+export function WriteIn({getInfo, WG}){
     const [name, setName] = useState('');
-    const [weeks, setWeeks] = useState(0);
-    const [days, setDays] = useState(0);
+    const [weeks, setWeeks] = useState('');
+    const [days, setDays] = useState('');
     const [description, setDescription] = useState('');
-
+    const [time, setTime] = useState('');
+    console.log('WG',WG)
     
     return (
       <View>
-        <View>
-          <Text>Name of the Guide</Text>
+        <View style={styles.input}>
+          <Text>Name of the {WG}</Text>
           <TextInput 
                     style={styles.textinput}
                     value={name}
                     onChangeText={setName}
+                    onSubmitEditing={getInfo}
+                />
+        </View>
+        {WG === 'workout' ? 
+        <>
+          <Text>Weeks & Days</Text>
+          <View style={styles.WandD}>
+            <View style={styles.WDinput}>
+              <Text>Weeks</Text>
+              <TextInput 
+                    style={styles.textinput}
+                    value={weeks}
+                    onChangeText={setWeeks}
+                    onSubmitEditing={getInfo}
+                />
+            </View>
+            <View style={styles.WDinput}>
+              <Text>Days</Text>
+              <TextInput 
+                    style={styles.textinput}
+                    value={days}
+                    onChangeText={setDays}
+                    onSubmitEditing={getInfo}
+                />
+            </View>
+          </View>
+        </>  
+        :
+        <>
+          <View style={styles.input}>
+              <Text>Time</Text>
+              <TextInput 
+                    style={styles.textinput}
+                    value={time}
+                    onChangeText={setTime}
+                    onSubmitEditing={getInfo}
+                />
+            </View>
+        </>
+      }
+        <View style={styles.input}>
+          <Text>Write description</Text>
+          <TextInput 
+                    style={styles.textdescription}
+                    value={description}
+                    onChangeText={setDescription}
                     onSubmitEditing={getInfo}
                 />
         </View>
@@ -30,8 +77,34 @@ const styles = StyleSheet.create({
       backgroundColor: '#fff',
     },
   
-    scrollView: {
-      backgroundColor: '#fff',
-      marginHorizontal: '5%'
+    textinput:{
+      borderColor: '#000',
+      borderWidth: 1,
+      borderRadius: 10,
+      width: '60%'
     },
+
+    input:{
+      display: 'flex',
+      flexDirection: 'column'
+    },
+
+    WDinput:{
+      display: 'flex',
+      flexDirection: 'row',
+      width: '50%'
+    },
+
+    WandD:{
+      display: 'flex',
+      flexDirection: 'row',
+    },
+
+    textdescription: {
+      borderColor: '#000',
+      borderWidth: 1,
+      borderRadius: 10,
+      height: 50,
+      width:'80%'
+    }
 });
