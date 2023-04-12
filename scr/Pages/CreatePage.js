@@ -17,7 +17,7 @@ export function CreatePage({navigation,route}){
       setData(jsonData);
     };
 
-    const getInfo = (name) => {
+    const getInfo = (name, weeks, days, description) => {
         console.log(name);
     }
 

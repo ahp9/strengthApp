@@ -11,9 +11,9 @@ export function WriteIn({getInfo, WG}){
     console.log('WG',WG)
     
     return (
-      <View>
-        <View style={styles.input}>
-          <Text>Name of the {WG}</Text>
+      <View style={styles.container}>
+        <View  style={styles.input}>
+          <Text style={styles.header}>Name of the {WG}</Text>
           <TextInput 
                     style={styles.textinput}
                     value={name}
@@ -23,21 +23,21 @@ export function WriteIn({getInfo, WG}){
         </View>
         {WG === 'workout' ? 
         <>
-          <Text>Weeks & Days</Text>
+          <Text style={styles.header}>Weeks & Days</Text>
           <View style={styles.WandD}>
             <View style={styles.WDinput}>
               <Text>Weeks</Text>
               <TextInput 
-                    style={styles.textinput}
+                    style={styles.textinputA}
                     value={weeks}
                     onChangeText={setWeeks}
                     onSubmitEditing={getInfo}
                 />
             </View>
             <View style={styles.WDinput}>
-              <Text>Days</Text>
+              <Text style={styles.header}>Days</Text>
               <TextInput 
-                    style={styles.textinput}
+                    style={styles.textinputA}
                     value={days}
                     onChangeText={setDays}
                     onSubmitEditing={getInfo}
@@ -48,9 +48,9 @@ export function WriteIn({getInfo, WG}){
         :
         <>
           <View style={styles.input}>
-              <Text>Time</Text>
+              <Text style={styles.header}>Time</Text>
               <TextInput 
-                    style={styles.textinput}
+                    style={styles.textinputA}
                     value={time}
                     onChangeText={setTime}
                     onSubmitEditing={getInfo}
@@ -59,7 +59,7 @@ export function WriteIn({getInfo, WG}){
         </>
       }
         <View style={styles.input}>
-          <Text>Write description</Text>
+          <Text style={styles.header}>Write description</Text>
           <TextInput 
                     style={styles.textdescription}
                     value={description}
@@ -73,20 +73,35 @@ export function WriteIn({getInfo, WG}){
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#fff',
+      alignSelf: 'center',
+      width: '90%'
+    },
+
+    header: {
+      marginBottom: '2%',
+      fontWeight: '500',
+      fontSize: 15,
     },
   
     textinput:{
       borderColor: '#000',
       borderWidth: 1,
-      borderRadius: 10,
-      width: '60%'
+      borderRadius: 5,
+      width: '100%'
+    },
+
+    textinputA:{
+      borderColor: '#000',
+      borderWidth: 1,
+      borderRadius: 5,
+      width: '70%',
+      marginLeft: '2%'
     },
 
     input:{
       display: 'flex',
-      flexDirection: 'column'
+      flexDirection: 'column',
+      marginVertical: '5%'
     },
 
     WDinput:{
@@ -105,6 +120,6 @@ const styles = StyleSheet.create({
       borderWidth: 1,
       borderRadius: 10,
       height: 50,
-      width:'80%'
+      width:'100%'
     }
 });
