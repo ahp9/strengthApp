@@ -9,7 +9,6 @@ export default function GuideHome({navigation, route}){
     const [workouts, setWorkouts] = useState([]);
     const [data, setData] = useState([]);
     const { name } = route.params;
-    console.log(name);
     
     useEffect(() => {
         fetchData();
@@ -43,7 +42,6 @@ export default function GuideHome({navigation, route}){
             <ScrollView style={styles.content}>
                 <GuideHeader guide={data}/>
                 <View style={styles.workouts}>
-                    {console.log(workouts)}
                     <WorkoutFlip style={styles.flip} navigation={navigation} workouts={workouts} guide={name}/>
                 </View>
             </ScrollView>

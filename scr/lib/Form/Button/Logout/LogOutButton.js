@@ -3,7 +3,7 @@ import { TouchableOpacity, View, Text, StyleSheet } from 'react-native';
 
 export default function LogOutButton({navigation}) {
   const onPressed = () =>{
-    console.log('test', navigation);
+    console.log(' logged out');
     navigation.navigate("Index");
   }
 

@@ -4,7 +4,6 @@ import Header from '../lib/Layout/Header/Header.js';
 import Footer from '../lib/Layout/Footer/Footer.js';
 import WorkoutTypes from '../lib/Workout/WorkoutTypes/WorkoutTypes.js'
 import FavoriteType from '../lib/Things/Favorite/FavoriteType/FavoriteType.js';
-import { CreateNew } from '../lib/Things/Create/CreateNew.js';
 
 export default function WorkoutPage({navigation}){
     const [data, setData] = useState([]);
@@ -22,7 +21,6 @@ export default function WorkoutPage({navigation}){
       <StatusBar barStyle="light-content" />
       <Header loggedIn = {true} navigation={navigation} navigationLink={"HomePage"}/>
       <ScrollView style={styles.scrollView}>
-        <CreateNew navigation={navigation} navigationLink={'WorkoutPage'} WG={'workout'}/>
         <FavoriteType  navigation={navigation} navigationLink={'WorkoutHome'} string={require('../../public/workouts.json')}/>
         <WorkoutTypes style={styles.types} navigation={navigation} />
       </ScrollView>

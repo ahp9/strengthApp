@@ -22,17 +22,20 @@ export function WarmUpAlert({setTime, onClose, time}){
 
 const styles = StyleSheet.create({
     title: {
+      alignSelf: 'center',
       fontSize: 24,
       fontWeight: 'bold',
       marginBottom: 10,
     },
 
     message: {
+      alignSelf: 'center',
       fontSize: 18,
       marginBottom: 20,
     },
 
     inputs:{
+      alignSelf: 'center',
       display: 'flex',
       flexDirection:'row',
       justifyContent:'space-between',
@@ -45,6 +48,6 @@ const styles = StyleSheet.create({
       padding: 10,
       borderColor : "#000",
       borderWidth: 1,
-      width: '48%'
+      width: '80%'
     }
 });

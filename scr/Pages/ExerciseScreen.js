@@ -13,8 +13,13 @@ const ExerciseScreen = ({ route }) => {
   const { exercises, currentExerciseIndex, navigation, workout ,guide} = route.params;
   const [currentIndex, setCurrentIndex] = useState(currentExerciseIndex);
   const currentExercise = exercises[currentIndex];
+  console.log('ExerciseScreen', navigation.replace);
 
-  const navigateToNextExercise = () => {
+  const navigateToNextExercise = (completed) => {
+    if(completed){
+      console.log('Completed exercise ', currentExercise.name)
+    }
+    
     if(currentIndex + 1 === exercises.length){
         doneWithWorkout(workout) 
     } else {

@@ -8,6 +8,7 @@ import ListCard from '../lib/Things/List/ListCard.js';
 export default function ListPage({ route }) {
     const { navigation, things, word, WG } = route.params;
     const [data, setData] = useState([]);
+    console.log('ListPage', navigation.replace);
     
     useEffect(() => {
         fetchData();

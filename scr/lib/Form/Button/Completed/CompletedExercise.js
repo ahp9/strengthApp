@@ -2,7 +2,7 @@ import { Text,StyleSheet, TouchableOpacity, View } from "react-native";
 
 export function CompletedExercise({nextExercise}){
     return(
-        <TouchableOpacity onPress={nextExercise}>
+        <TouchableOpacity onPress={() => nextExercise(true)}>
                 <View  style={styles.setTracker}>
                     <Text style={styles.setNumber}>Complete Exercise</Text>
                 </View>

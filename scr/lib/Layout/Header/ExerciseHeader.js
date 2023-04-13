@@ -7,6 +7,11 @@ export default function ExerciseHeader(props) {
   const [backgroundColor, setBackgroundColor] = useState('#CDD4FF');
 
   const handlePress = () => {
+    if (backgroundColor === '#CDD4FF') {
+      console.log('is favorite');
+    } else {
+      console.log('Is not favorite');
+    }
     setBackgroundColor(backgroundColor === '#CDD4FF' ? 'rgba(255, 175, 236, 1)' : '#CDD4FF');
   };
     return (

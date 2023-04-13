@@ -12,7 +12,7 @@ export function NavigatorButton({navigateBackToExercise, navigateToNextExercise,
             </View>
         </TouchableOpacity>
         <Image style={styles.line} source={require('strengthapp/assets/Line.png')}/>
-        <TouchableOpacity onPress={() => navigateToNextExercise(workout)} >
+        <TouchableOpacity onPress={() => navigateToNextExercise(false)} >
             <View>
                 {current+1 < length ? <Image style={styles.front} source={require('strengthapp/assets/Arrow.png')} /> : 
                 <Image style={styles.front} source={require('strengthapp/assets/checked.png')} />}

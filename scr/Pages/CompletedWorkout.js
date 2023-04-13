@@ -5,21 +5,8 @@ import Footer from '../lib/Layout/Footer/Footer.js';
 
 export default function CompleteWorkout({navigation, route}){
     const { workout } = route.params;
+    console.log("Completed", workout);
     
- /*
-    useEffect(() => {
-        fetchData();
-    }, []);
-    
-    const fetchData = async () => {
-        const jsonData = require('../../public/workouts.json');
-
-        const filteredWorkouts = jsonData.filter(workout => name === workout.name);
-        setWorkouts(filteredWorkouts);
-    };
- */
-
-
 
     return (
         <SafeAreaView style={styles.container}>
