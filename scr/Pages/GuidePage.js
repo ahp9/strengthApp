@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { StyleSheet, ScrollView, View, SafeAreaView, Text, StatusBar } from 'react-native';
+import React from 'react';
+import { StyleSheet, ScrollView, SafeAreaView, StatusBar } from 'react-native';
 
 import Header from '../lib/Layout/Header/Header.js';
 import Footer from '../lib/Layout/Footer/Footer.js';

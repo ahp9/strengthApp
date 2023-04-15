@@ -9,17 +9,17 @@ export default function YourGuide(props) {
     const { data, navigation } = props;
 
     const renderGuide = ({ item, index }) => {
-        return (
-          <View style={styles.card} key={item.id} onPress={() => goToIndex(index)}>
-            <YourGuide_Card style={styles.YourGuide}
-              name={item.name}
-              navigation={navigation}
-              dificulty_level={item.difficult_level}
-            />
-            <ProgressCard style={styles.progress} />
-          </View>
-        );
-      };
+      return (
+        <View style={styles.card} key={item.id} onPress={() => goToIndex(index)}>
+          <YourGuide_Card style={styles.YourGuide}
+            name={item.name}
+            navigation={navigation}
+            dificulty_level={item.difficult_level}
+          />
+          <ProgressCard style={styles.progress} />
+        </View>
+      );
+    };
 
     return (
       <View style={styles.content}>
@@ -29,7 +29,6 @@ export default function YourGuide(props) {
           contentContainerStyle={styles.container}
           showPagination={true}
           scrollEnabled={true}
-
           paginationDefaultColor="#FFFFFF"
           paginationActiveColor="#9F9FFF"
       />
@@ -60,17 +59,4 @@ const styles = StyleSheet.create({
         fontSize: 18,
     },
 
-    dotStyle: {
-      width: 10,
-      height: 10,
-      borderRadius: 5,
-      backgroundColor: '#fff',
-    },
-
-    inactiveDotStyle: {
-      width: 8,
-      height: 8,
-      borderRadius: 4,
-      backgroundColor: '#fff',
-    },
 })
