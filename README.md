@@ -9,7 +9,6 @@ Búið var til ræktar-app í React Native
 ### Til að byrja verkefni þarf að:
 
 ```
-cd strengthapp
 npm install
 npm run start
 ```
